@@ -330,6 +330,31 @@
 }
 
 .logo-text-green {
+  display: inline-block;
+  color: #28a745;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  margin-left: 0%; /* reduced spacing */
+  vertical-align: middle;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.small-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4f1a7e;
+  letter-spacing: 0.5px;
+  margin-top: -4px;
+  display: inline-block;
+  font-family: 'Georgia', serif;
+}
+
+  
+  
+  
+
+.logo-text-green {
     color: #198754; /* Bootstrap green, or use your custom green */
   }
 .logo-text-green {
