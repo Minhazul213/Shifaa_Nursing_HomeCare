@@ -142,3 +142,9 @@ const toggleBtn = document.getElementById('toggleLanguage');
             toggleBtn.innerText = "Switch to English";
         }
     });
+
+
+
+
+
+    

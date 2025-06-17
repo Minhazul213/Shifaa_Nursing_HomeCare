@@ -561,6 +561,11 @@
     transition: 0.5s;
 }
 
+.card,
+.service-card {
+  position: relative;
+  z-index: 1 !important;
+}
 
 
 .service .service-item:hover .service-content .service-content-inner {

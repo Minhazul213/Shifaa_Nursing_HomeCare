@@ -28,6 +28,20 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+
+
+        <style>
+            .btn {
+              cursor: pointer;
+              display: inline-block;
+              background-color: #198754;
+              color: white;
+              padding: 0.5rem 1rem;
+              border-radius: 50px;
+              text-decoration: none;
+              margin-bottom: 1rem;
+            }
+          </style>
     </head>
 
     <body>
@@ -65,11 +79,11 @@
 
 
             <!-- Call button Start-->
-            <a href="tel:+8801774109704" class="call-button" title="Call Now">
+            <a href="tel:+8801841260547" class="call-button" title="Call Now">
                 <div class="phone-icon">
                     <i class="fa fa-phone"></i>
                 </div>
-                <span class="phone-number">01774109704</span>
+                <span class="phone-number">01841260547</span>
             </a> 
             <!-- Call button end-->
 
@@ -159,7 +173,9 @@
                     <div class="sub-style">
                         <h4 class="sub-title px-3 mb-0">What We Do/Service</h4>
                     </div>
-                    <h1 class="display-3 mb-4">Expert Nursing Services for Your Well-being</h1>
+                    
+                    <h1 class="display-3 mb-4">Shifaa Nursing Home Services for Your Well-being</h1>
+                    
                 </div>
                 
                 <div class="row g-4 justify-content-center">
@@ -168,44 +184,152 @@
                            <div class="service-img rounded-top">
                                 <img src="img/service1.jpg" class="img-fluid rounded-top w-100" alt="">
                            </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4">Physiotherapy at Home</h5>
-                                    <p class="mb-4">Experience expert physiotherapy at home. Our qualified physiotherapists offer personalized care to restore mobility, relieve pain, and improve physical health—right at your doorstep.</p>
-                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
+                           <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                              <h5 class="mb-4">ফিজিওথেরাপি সেবা (Physiotherapy Service)</h5>
+                              <p class="mb-4">অভিজ্ঞ ফিজিওথেরাপিস্টরা বাসায় গিয়ে নির্ধারিত সময়ে চিকিৎসা সেবা প্রদান করে থাকেন। শারীরিক দুর্বলতা, ব্যথা কিংবা স্ট্রোকের পর সুস্থ হতে এটি অত্যন্ত কার্যকর।</p>
+                              <a href="#" id="readMorePhysio" class="btn">Read More</a>
                             </div>
+                          
+                            <script>
+                              // Physiotherapy Service Popup
+                              document.getElementById('readMorePhysio').addEventListener('click', function (e) {
+                                e.preventDefault();
+                                Swal.fire({
+                                  title: 'ফিজিওথেরাপি সেবা (Physiotherapy Service)',
+                                  html: `
+                                    <div style="text-align: left; font-size: 16px; line-height: 1.7;">
+                                      <p><strong>Shifaa Physiotherapy</strong> সেবা অভিজ্ঞ ফিজিওথেরাপিস্টদের মাধ্যমে বাসায় গিয়ে প্রদান করা হয়। এটি স্ট্রোক, প্যারালাইসিস বা ব্যথাজনিত সমস্যায় অত্যন্ত কার্যকর চিকিৎসা পদ্ধতি।</p>
+                                      
+                                      <h6 style="margin-top: 20px;"><strong>📌 যা অন্তর্ভুক্ত:</strong></h6>
+                                      <ul style="padding-left: 20px; list-style-type: none;">
+                                        <li>✅ স্ট্রোক পরবর্তী থেরাপি</li>
+                                        <li>✅ প্যারালাইসিস / হাফ প্যারালাইসিস রিকভারি</li>
+                                        <li>✅ ঘাড়, কোমর, হাঁটু ও জয়েন্টের ব্যথার চিকিৎসা</li>
+                                        <li>✅ হুইলচেয়ার থেকে হাঁটাচলার উন্নয়ন থেরাপি</li>
+                                        <li>✅ বিশেষ ব্যায়াম পরিকল্পনা</li>
+                                      </ul>
+                          
+                                      <h6 style="margin-top: 20px;"><strong>👥 কার জন্য উপযুক্ত:</strong></h6>
+                                      <ul style="padding-left: 20px; list-style-type: none;">
+                                        <li>✔ স্ট্রোক / প্যারালাইসিস রোগী</li>
+                                        <li>✔ স্পন্ডিলোসিস, ব্যাক পেইন</li>
+                                        <li>✔ হাঁটতে অসুবিধা হয় এমন ব্যক্তি</li>
+                                      </ul>
+                                    </div>
+                                  `,
+                                  width: '650px',
+                                  confirmButtonText: 'বন্ধ করুন',
+                                  confirmButtonColor: '#198754'
+                                });
+                              });
+                            </script>
+                          </div>
+                          
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="service-item rounded">
-                           <div class="service-img rounded-top">
+                            <div class="service-img rounded-top">
                                 <img src="img/service2.jpeg" class="img-fluid rounded-top w-100" alt="">
-                           </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4">Nursing Service at Home</h5>
-                                    <p class="mb-4">Give your loved ones expert long-term home care. We provide compassionate nursing for elderly patients with complex needs—ensuring constant care and comfort in their own home.</p>
-                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
                             </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                    <div class="service-content-inner">
+                                        <h5 class="mb-4">নার্সিং সেবা (Nursing Service)</h5>
+                                        <p class="mb-4">Shifaa Nursing Home Care এর অভিজ্ঞ নার্সরা বাসায় গিয়ে রোগীর অবস্থা অনুযায়ী সুনির্দিষ্ট নার্সিং সেবা প্রদান করেন। আমাদের নার্সরা সরকার অনুমোদিত কোর্সপ্রাপ্ত, দক্ষ এবং যত্নশীল।</p>
+                                        <a href="#" id="readMoreBtn" class="btn">Read More</a>
+                                    </div>
+                                
+                                  <script>
+                                    document.addEventListener('DOMContentLoaded', function () {
+                                      document.getElementById('readMoreBtn').addEventListener('click', function (e) {
+                                        e.preventDefault();
+                                  
+                                        Swal.fire({
+                                          title: 'সার্ভিস বিবরণ',
+                                          html: `
+                                            <div style="text-align: left; font-size: 16px; line-height: 1.7;">
+                                              <p><strong>Shifaa Nursing Home Care</strong> এর অভিজ্ঞ নার্সরা বাসায় গিয়ে রোগীর অবস্থা অনুযায়ী সুনির্দিষ্ট নার্সিং সেবা প্রদান করেন। আমাদের নার্সরা সরকার অনুমোদিত কোর্সপ্রাপ্ত, দক্ষ এবং যত্নশীল।</p>
+                                              
+                                              <h6 style="margin-top: 20px; list-style-type: none;"><strong>📌 যা অন্তর্ভুক্ত:</strong></h6>
+                                              <ul style="padding-left: 20px;">
+                                                <li>✅ ইনজেকশন প্রয়োগ (IM/IV/Subcut)</li>
+                                                <li>✅ স্যালাইন দেওয়া ও ক্যানুলা স্থাপন</li>
+                                                <li>✅ ঘা ও ক্ষতস্থানে ড্রেসিং</li>
+                                                <li>✅ ইউরিন ক্যাথেটার (Foley) ইনসার্ট ও পরিবর্তন</li>
+                                                <li>✅ NGT (নাসোগ্যাস্ট্রিক টিউব) ইনসার্ট ও ফিডিং</li>
+                                                <li>✅ ব্লাড প্রেসার, সুগার ও অন্যান্য চেকআপ</li>
+                                                <li>✅ প্রেশার সোর (Bedsore) কেয়ার</li>
+                                                <li>✅ ট্র্যাকিওস্টমি কেয়ার</li>
+                                              </ul>
+                                  
+                                              <h6 style="margin-top: 20px;"><strong>👥 কার জন্য উপযুক্ত:</strong></h6>
+                                              <ul style="padding-left: 20px; list-style-type: none;">
+                                                <li>✔ ICU/CCU ফেরত রোগী</li>
+                                                <li>✔ বয়স্ক ও দুর্বল রোগী</li>
+                                                <li>✔ দীর্ঘমেয়াদি অসুস্থ ব্যক্তির সেবা</li>
+                                              </ul>
+                                            </div>
+                                          `,
+                                          width: '650px',
+                                          confirmButtonText: 'বন্ধ করুন',
+                                          confirmButtonColor: '#198754'
+                                        });
+                                      });
+                                    });
+                                  </script>                                  
+                            </div> 
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item rounded">
                            <div class="service-img rounded-top">
-                                <img src="img/Oxygen_cylinder.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <img src="img/banner2.jpeg" class="img-fluid rounded-top w-100" alt="">
                            </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
+                           <div class="service-content rounded-bottom bg-light p-4">
                                 <div class="service-content-inner">
-                                    <h5 class="mb-4">Oxygen Cylinder at Home</h5>
-                                    <p class="mb-4">We provide affordable oxygen cylinders at home, delivered quickly to your doorstep with proper setup—ensuring timely support for your health, breathing comfort, and emergency needs.</p>
-                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                                    <h5 class="mb-4">কেয়ারগিভার সেবা (Caregiver Service)</h5>
+                                    <p class="mb-4">Shifaa Caregiver সেবা অসুস্থ, বৃদ্ধ বা একাকী ব্যক্তিদের জন্য, যারা দৈনন্দিন কাজে সহায়তা চান। কেয়ারগিভাররা সহানুভূতি ও পরিবারবোধ নিয়ে সেবা প্রদান করেন।</p>
+                                    <a href="#" id="readMoreCaregiver" class="btn">Read More</a>
                                 </div>
-                            </div>
+                                <script>
+                                     // Caregiver Service Popup
+                                      document.getElementById('readMoreCaregiver').addEventListener('click', function (e) {
+                                        e.preventDefault();
+                                        Swal.fire({
+                                          title: 'কেয়ারগিভার সেবা (Caregiver Service)',
+                                          html: `
+                                            <div style="text-align: left; font-size: 16px; line-height: 1.7;">
+                                              <p><strong>Shifaa Caregiver</strong> সেবা এমন অসুস্থ, বৃদ্ধ বা একাকী ব্যক্তিদের জন্য, যারা প্রতিদিনের নিত্য প্রয়োজনীয় কাজে সাহায্যের প্রয়োজন বোধ করেন। কেয়ারগিভাররা পরিবারবোধ ও সহানুভূতির সঙ্গে সেবা প্রদান করে থাকেন।</p>
+                                              <h6 style="margin-top: 20px;"><strong>📌 যা অন্তর্ভুক্ত:</strong></h6>
+                                              <ul style="padding-left: 20px; list-style-type: none;">
+                                                <li>✅ খাওয়ানো, ওষুধ সময়মতো খাওয়ানো</li>
+                                                <li>✅ গোসল করানো, কাপড় পরানো</li>
+                                                <li>✅ টয়লেট ব্যবহার ও পরিষ্কার করা</li>
+                                                <li>✅ বিছানা বদলানো ও রুম পরিষ্কার</li>
+                                                <li>✅ রোগীর সাথে গল্প করা ও মানসিক সাপোর্ট</li>
+                                                <li>✅ হুইলচেয়ার ব্যবহার সহায়তা</li>
+                                              </ul>
+                                              <h6 style="margin-top: 20px;"><strong>👥 কার জন্য উপযুক্ত:</strong></h6>
+                                              <ul style="padding-left: 20px; list-style-type: none;">
+                                                <li>✔ বয়স্ক ও চলাফেরায় অক্ষম ব্যক্তি</li>
+                                                <li>✔ আলঝেইমার ও ডিমেনশিয়া রোগী</li>
+                                                <li>✔ পরিবার থেকে দূরে থাকা একাকী ব্যক্তি</li>
+                                              </ul>
+                                            </div>
+                                          `,
+                                          width: '650px',
+                                          confirmButtonText: 'বন্ধ করুন',
+                                          confirmButtonColor: '#198754'
+                                        });
+                                      });                              
+                                  </script>                                  
+                          </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+
+
+                     <!-- <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="service-item rounded">
                            <div class="service-img rounded-top">
                                 <img src="img/elder_care.jpg" class="img-fluid rounded-top w-100" alt="">
@@ -218,7 +342,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
 
 
                     <!--
@@ -235,10 +359,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div> 
-                          -->
+                    </div> -->
+                          
                      
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <!-- <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="service-item rounded">
                            <div class="service-img rounded-top">
                                 <img src="img/medical_equipment.jpg" class="img-fluid rounded-top w-100" alt="">
@@ -252,19 +376,54 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="service-item rounded">
                            <div class="service-img rounded-top">
-                                <img src="img/doctor_care.jpg" class="img-fluid rounded-top w-100" alt="">
+                                <img src="img/ICU.jpeg" class="img-fluid rounded-top w-100" alt="">
                            </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4">Doctor Home Visit</h5>
-                                    <p class="mb-4">Get expert care at home with our Doctor on Demand service. From minor illness to post-surgery recovery, licensed physicians offer personalized care, prescriptions & follow-up—no queues, just comfort.</p>
-                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
+                           <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                              <h5 class="mb-4">ICU/CCU/HDU ফেরত রোগীর সেবা</h5>
+                              <p class="mb-4">হাসপাতাল থেকে বাসায় ফেরার পরও অনেক রোগীর নিবিড় ও বিশেষ যত্ন প্রয়োজন হয়। আমরা দক্ষ, প্রশিক্ষিত ও অভিজ্ঞ নার্সদের মাধ্যমে বাসায় উন্নতমানের সেবা প্রদান করি, যা রোগীর দ্রুত সুস্থতায় সহায়ক।</p>
+                              <a href="#" id="readMoreICUCare" class="btn">Read More</a>
                             </div>
+                          
+                            <script>
+                              // ICU/CCU/HDU Care Popup
+                              document.getElementById('readMoreICUCare').addEventListener('click', function (e) {
+                                e.preventDefault();
+                                Swal.fire({
+                                  title: 'ICU/CCU/HDU ফেরত রোগীর সেবা',
+                                  html: `
+                                    <div style="text-align: left; font-size: 16px; line-height: 1.7;">
+                                      <p><strong>Shifaa ICU/CCU/HDU ফেরত রোগীর সেবা</strong> এমন রোগীদের জন্য, যারা হাসপাতাল থেকে বাসায় ফিরেছেন কিন্তু এখনো নিবিড় পর্যবেক্ষণ ও যত্নের প্রয়োজন রয়েছে। অভিজ্ঞ নার্সরা বাসায় গিয়ে উন্নতমানের সেবা প্রদান করে থাকেন।</p>
+                                      
+                                      <h6 style="margin-top: 20px;"><strong>📌 যা অন্তর্ভুক্ত:</strong></h6>
+                                      <ul style="padding-left: 20px; list-style-type: none;">
+                                        <li>✅ অক্সিজেন/স্যালাইন ম্যানেজমেন্ট</li>
+                                        <li>✅ ট্র্যাকিওস্টমি ও ভেন্টিলেশন কেয়ার</li>
+                                        <li>✅ ব্লাড ও ইউরিন রিপোর্ট মনিটর</li>
+                                        <li>✅ বেড সোর প্রতিরোধ</li>
+                                        <li>✅ দিনে ২ বার নার্স ভিজিট</li>
+                                      </ul>
+                          
+                                      <h6 style="margin-top: 20px;"><strong>👥 কার জন্য উপযুক্ত:</strong></h6>
+                                      <ul style="padding-left: 20px; list-style-type: none;">
+                                        <li>✔ দীর্ঘদিন ICU তে ছিল এমন রোগী</li>
+                                        <li>✔ ক্যান্সার বা অঙ্গহানির রোগী</li>
+                                        <li>✔ জটিল ও দীর্ঘমেয়াদি রোগে ভোগা ব্যক্তি</li>
+                                      </ul>
+                                    </div>
+                                  `,
+                                  width: '650px',
+                                  confirmButtonText: 'বন্ধ করুন',
+                                  confirmButtonColor: '#198754'
+                                });
+                              });
+                            </script>
+                          </div>
+                          
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
@@ -272,15 +431,186 @@
                            <div class="service-img rounded-top">
                                 <img src="img/baby_care.jpg" class="img-fluid rounded-top w-100" alt="">
                            </div>
-                            <div class="service-content rounded-bottom bg-light p-4">
-                                <div class="service-content-inner">
-                                    <h5 class="mb-4">Baby Care at Home</h5>
-                                    <p class="mb-4">Celebrate your newborn's arrival with expert postnatal care. We ensure one-to-one support for both mother and baby—caring for their physical and emotional well-being at home.</p>
-                                    <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
-                                </div>
+                           <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                              <h5 class="mb-4">বেবিকেয়ার ও নিউবোর্ণ কেয়ার (Baby & Mother Care)</h5>
+                              <p class="mb-4">নবজাতক ও সদ্য মা হওয়া নারীদের জন্য স্পেশাল কেয়ার। মা ও শিশুর সুস্থতা নিশ্চিত করতে বাসায় গিয়ে যত্নশীল নার্সদের মাধ্যমে সেবা প্রদান করা হয়।</p>
+                              <a href="#" id="readMoreBabyCare" class="btn">Read More</a>
                             </div>
+                          
+                            <script>
+                              // Baby & Mother Care Service Popup
+                              document.getElementById('readMoreBabyCare').addEventListener('click', function (e) {
+                                e.preventDefault();
+                                Swal.fire({
+                                  title: 'বেবিকেয়ার ও নিউবোর্ণ কেয়ার (Baby & Mother Care)',
+                                  html: `
+                                    <div style="text-align: left; font-size: 16px; line-height: 1.7;">
+                                      <p><strong>Shifaa Baby & Mother Care</strong> সেবা নবজাতক শিশু ও সদ্য মা হওয়া নারীদের জন্য ডিজাইন করা। মা ও শিশুর সুস্থতা নিশ্চিত করতে বাসায় গিয়ে প্রশিক্ষিত নার্সরা যত্নশীল সেবা প্রদান করেন।</p>
+                                      
+                                      <h6 style="margin-top: 20px;"><strong>📌 যা অন্তর্ভুক্ত:</strong></h6>
+                                      <ul style="padding-left: 20px; list-style-type: none;">
+                                        <li>✅ নবজাতকের স্নান, কাপড়, ডায়াপার পরিবর্তন</li>
+                                        <li>✅ বুকের দুধ খাওয়ানোর সাহায্য</li>
+                                        <li>✅ সদ্য মা হওয়া মায়ের পুষ্টি ও বিশ্রাম ব্যবস্থাপনা</li>
+                                        <li>✅ C-section এর পরবর্তী সেবা</li>
+                                        <li>✅ নিয়মিত স্বাস্থ্য পর্যবেক্ষণ</li>
+                                      </ul>
+                          
+                                      <h6 style="margin-top: 20px;"><strong>👥 কার জন্য উপযুক্ত:</strong></h6>
+                                      <ul style="padding-left: 20px; list-style-type: none;">
+                                        <li>✔ সদ্য মা হওয়া নারী</li>
+                                        <li>✔ প্রিম্যাচিওর বেবি</li>
+                                        <li>✔ একক মা বা পরিবারে সাহায্য না থাকা নারী</li>
+                                      </ul>
+                                    </div>
+                                  `,
+                                  width: '650px',
+                                  confirmButtonText: 'বন্ধ করুন',
+                                  confirmButtonColor: '#198754'
+                                });
+                              });
+                            </script>
+                          </div>                          
                         </div>
                     </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded">
+                           <div class="service-img rounded-top">
+                                <img src="img/General health.jpg" class="img-fluid rounded-top w-100" alt="">
+                           </div>
+                           <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                              <h5 class="mb-4">সাধারণ স্বাস্থ্যসেবা (General Health Support)</h5>
+                              <p class="mb-4">বাসায় থেকেই ছোট ছোট স্বাস্থ্য সমস্যাগুলো মোকাবেলা করার জন্য প্রয়োজনীয় নার্সিং সেবা প্রদান করা হয়, যাতে রোগীর দ্রুত আরাম ও সুস্থতা নিশ্চিত হয়।</p>
+                              <a href="#" id="readMoreGeneral" class="btn">Read More</a>
+                            </div>
+                          
+                            <script>
+                              // General Health Support Popup
+                              document.getElementById('readMoreGeneral').addEventListener('click', function (e) {
+                                e.preventDefault();
+                                Swal.fire({
+                                  title: 'সাধারণ স্বাস্থ্যসেবা (General Health Support)',
+                                  html: `
+                                    <div style="text-align: left; font-size: 16px; line-height: 1.7;">
+                                      <p><strong>Shifaa General Health Service</strong> এর মাধ্যমে রোগীরা ঘরে বসেই ছোটখাটো শারীরিক সমস্যার জন্য অভিজ্ঞ নার্সদের সেবা নিতে পারেন। এটি সময়মতো প্রাথমিক সেবা নিশ্চিত করে।</p>
+                                      
+                                      <h6 style="margin-top: 20px;"><strong>📌 যা অন্তর্ভুক্ত:</strong></h6>
+                                      <ul style="padding-left: 20px; list-style-type: none;">
+                                        <li>✅ ইনজেকশন প্রয়োগ</li>
+                                        <li>✅ ড্রেসিং করা</li>
+                                        <li>✅ রক্তচাপ, সুগার চেক</li>
+                                        <li>✅ হালকা জ্বর, ইনফেকশন পর্যবেক্ষণ</li>
+                                        <li>✅ স্যালাইন সেট করা</li>
+                                      </ul>
+                                    </div>
+                                  `,
+                                  width: '650px',
+                                  confirmButtonText: 'বন্ধ করুন',
+                                  confirmButtonColor: '#198754'
+                                });
+                              });
+                            </script>
+                          </div>
+                                                    
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded">
+                           <div class="service-img rounded-top">
+                                <img src="img/Dementia.jpeg" class="img-fluid rounded-top w-100" alt="">
+                           </div>
+                           <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                              <h5 class="mb-4">ডিমেনশিয়া ও আলঝেইমার রোগীর কেয়ার</h5>
+                              <p class="mb-4">স্মৃতি দুর্বলতা, আচরণগত সমস্যা ও মানসিক ভারসাম্যহীনতা থাকলে আলাদা কেয়ার লাগে। আমাদের বিশেষ প্রশিক্ষিত কেয়ারগিভাররা ধৈর্য ও ভালোবাসার সাথে এই সেবা প্রদান করেন।</p>
+                              <a href="#" id="readMoreDementia" class="btn">Read More</a>
+                            </div>
+                          
+                            <script>
+                              // Dementia & Alzheimer's Care Popup
+                              document.getElementById('readMoreDementia').addEventListener('click', function (e) {
+                                e.preventDefault();
+                                Swal.fire({
+                                  title: 'ডিমেনশিয়া ও আলঝেইমার রোগীর কেয়ার',
+                                  html: `
+                                    <div style="text-align: left; font-size: 16px; line-height: 1.7;">
+                                      <p><strong>Shifaa Dementia & Alzheimer's Care</strong> সেবা স্মৃতি দুর্বলতা ও মানসিক চ্যালেঞ্জে ভোগা রোগীদের জন্য। আমাদের অভিজ্ঞ কেয়ারগিভাররা ভালোবাসা ও ধৈর্যের সাথে তাদের সাহায্য করে থাকেন।</p>
+                                      
+                                      <h6 style="margin-top: 20px;"><strong>📌 যা অন্তর্ভুক্ত:</strong></h6>
+                                      <ul style="padding-left: 20px; list-style-type: none;">
+                                        <li>✅ ভুলে যাওয়া/উল্টো কাজ করার বিষয় মোকাবেলা</li>
+                                        <li>✅ মনোযোগ ধরে রাখা ও সহানুভূতিমূলক আচরণ</li>
+                                        <li>✅ নিরাপদ ঘর ও পরিবেশ নিশ্চিত</li>
+                                        <li>✅ সঠিক সময়ে ওষুধ খাওয়ানো</li>
+                                        <li>✅ মানসিক ও সামাজিক সহযোগিতা</li>
+                                      </ul>
+                                    </div>
+                                  `,
+                                  width: '650px',
+                                  confirmButtonText: 'বন্ধ করুন',
+                                  confirmButtonColor: '#198754'
+                                });
+                              });
+                            </script>
+                          </div>                                                 
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded">
+                           <div class="service-img rounded-top">
+                                <img src="img/banner3.jpeg" class="img-fluid rounded-top w-100" alt="">
+                           </div>
+                           <div class="service-content rounded-bottom bg-light p-4">
+                            <div class="service-content-inner">
+                              <h5 class="mb-4">অ্যাটেনডেন্ট / সহকারী সেবা (Attendant Service)</h5>
+                              <p class="mb-4">আমাদের অভিজ্ঞ ও প্রশিক্ষিত এটেনডেন্টরা বাসায় কিংবা হাসপাতালে রোগীর পাশে থেকে দিনরাত যত্নসহকারে সাহায্য ও মনোযোগ দিয়ে সর্বোচ্চ মানের সেবা প্রদান করে থাকেন, যাতে রোগীর আরাম ও সুস্থতা নিশ্চিত হয়।</p>
+                              <a href="#" id="readMoreAttendant" class="btn">Read More</a>
+                            </div>
+                          
+                            <script>
+                              // Attendant Service Popup
+                              document.getElementById('readMoreAttendant').addEventListener('click', function (e) {
+                                e.preventDefault();
+                                Swal.fire({
+                                  title: 'অ্যাটেনডেন্ট / সহকারী সেবা (Attendant Service)',
+                                  html: `
+                                    <div style="text-align: left; font-size: 16px; line-height: 1.7;">
+                                      <p><strong>Shifaa Attendant Service</strong> প্রশিক্ষিত এটেনডেন্টরা বাসায় বা হাসপাতালে রোগীর পাশে থেকে সেবা প্রদান করেন।</p>
+                                      
+                                      <h6 style="margin-top: 20px;"><strong>📌 যা অন্তর্ভুক্ত:</strong></h6>
+                                      <ul style="padding-left: 20px; list-style-type: none;">
+                                        <li>✅ ১২ ঘণ্টা / ২৪ ঘণ্টা শিফটে দায়িত্ব পালন</li>
+                                        <li>✅ হাসপাতালে ভিজিটে রোগীর সঙ্গী</li>
+                                        <li>✅ রোগীর প্রয়োজনীয় জিনিসপত্র দেখা-শোনা</li>
+                                        <li>✅ পরিবার ও চিকিৎসকের সাথে সমন্বয়</li>
+                                        <li>✅ দ্রুত সমস্যা বুঝে পরিবারকে জানানো</li>
+                                      </ul>
+                          
+                                      <h6 style="margin-top: 20px;"><strong>👥 কার জন্য উপযুক্ত:</strong></h6>
+                                      <ul style="padding-left: 20px; list-style-type: none;">
+                                        <li>✔ গুরুতর রোগী</li>
+                                        <li>✔ যারা পরিবার থেকে দূরে থাকেন</li>
+                                        <li>✔ ICU থেকে বাড়ি ফেরত রোগী</li>
+                                      </ul>
+                                    </div>
+                                  `,
+                                  width: '650px',
+                                  confirmButtonText: 'বন্ধ করুন',
+                                  confirmButtonColor: '#198754'
+                                });
+                              });
+                            </script>
+                          </div>
+                                                                           
+                        </div>
+                    </div>
+
                     <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
                         <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Services More</a>
                     </div>
@@ -307,8 +637,20 @@
                         <div class="section-title text-start mb-5">
                             <h4 class="sub-title pe-3 mb-0">About Us</h4>
                             <h1 class="display-3 mb-4">Shifaa HomeCare: Professional Home Care for Every Need</h1>
-                            <p class="mb-4">Founded in 2000,Shifaa Nursing HomeCare began with the vision to provide compassionate and professional home nursing services for people in need, including the elderly, patients recovering from surgery, and individuals with chronic or terminal illnesses. We continue to lead the way in home healthcare in Bangladesh, with a focus on promoting well-being and improving the quality of life.</p>
-                            <p class="mb-4">Our mission is to provide affordable, high-quality care for patients in the comfort of their homes, ensuring faster recovery, reduced infection risks, and minimal hospital readmissions. From essential daily living assistance to specialized medical and nursing care, we offer a wide range of services tailored to meet the unique needs of each patient.</p>
+                            <p class="mb-4">
+                                <span style="font-size: 24px; color: #198754; font-weight: bold;">
+                                  Founded in 2023,
+                                </span>
+                                Shifaa Nursing HomeCare began with the vision to provide compassionate and professional home nursing services for people in need, including the elderly, patients recovering from surgery, and individuals with chronic or terminal illnesses. We continue to lead the way in home healthcare in Bangladesh, with a focus on promoting well-being and improving the quality of life.
+                              </p>
+                              
+                              <p class="mb-4">
+                                <span style="font-size: 24px; color: #198754; font-weight: bold;">
+                                  Our mission 
+                                </span>
+                                is to provide affordable, high-quality care for patients in the comfort of their homes, ensuring faster recovery, reduced infection risks, and minimal hospital readmissions. From essential daily living assistance to specialized medical and nursing care, we offer a wide range of services tailored to meet the unique needs of each patient.
+                              </p>
+                              
                             <div class="mb-4">
                                 <p class="custom-green-text">
                                     <i class="fa fa-check custom-green-text me-2"></i>
@@ -340,7 +682,9 @@
                         <h4 class="sub-title px-3 mb-0">Why Choose Us</h4>
                     </div>
                     <h1 class="display-3 mb-4">Why Choose Shifaa Nursing HomeCare?</h1>
-                    <p class="mb-0">At Shifaa HomeCare, we believe in restoring your health, dignity, and independence through compassionate, professional home care. Our experienced team of caregivers and healthcare professionals are dedicated to providing personalized care that enhances your well-being. Whether you're recovering from surgery, managing a chronic condition, or in need of ongoing support, we offer customized services designed to meet your unique needs.</p>
+                   <!-- <p class="mb-0">At Shifaa HomeCare, we believe in restoring your health, dignity, and independence through compassionate, professional home care. Our experienced team of
+                     caregivers and healthcare professionals are dedicated to providing personalized care that enhances your well-being. Whether you're recovering from surgery, 
+                     managing a chronic condition, or in need of ongoing support, we offer customized services designed to meet your unique needs.</p>-->
                 </div>
                 
                 <div class="row g-4 justify-content-center">
@@ -586,7 +930,9 @@
                         <h4 class="sub-title px-3 mb-0">Meet Our Team</h4>
                     </div>
                     <h1 class="display-3 mb-4">Expert Nursing & Physiotherapy Services for Your Recovery</h1>
-                    <p class="mb-0">At ShifaaNursing, our certified nurses and physiotherapists are committed to helping you regain strength, mobility, and independence. With years of experience, we personalize every service to meet your unique recovery needs—ensuring safe, compassionate, and effective healing at every stage.</p>
+                    <!-- <p class="mb-0">At ShifaaNursing, our certified nurses and physiotherapists are committed to helping you regain strength, mobility,
+                         and independence. With years of experience, we personalize every service to meet your unique recovery needs—ensuring safe, 
+                         compassionate, and effective healing at every stage.</p> -->
                 </div>
                 
                 <div class="row g-4 justify-content-center">
@@ -855,22 +1201,22 @@
                     </div>
         
                     <!-- Blog 4 -->
-                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.7s">
+                    <!-- <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="blog-item rounded">
                             <div class="blog-img">
                                 <img src="img/medical_equipment.jpg" class="img-fluid w-100" alt="Medical Equipment">
                             </div>
                             <div class="blog-centent p-4">
                                 <div class="d-flex justify-content-between mb-4">
-                                   <!--  <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045</p>
-                                    <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>  -->
+                                    <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> 01 Jan 2045</p>
+                                    <a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a> 
                                 </div>
                                 <a href="#" class="h4">Medical Equipment at Home: What We Provide</a>
                                 <p class="my-4">Learn about our rental and support service for medical beds, oxygen cylinders, wheelchairs, and more—delivered to your doorstep.</p>
                                 <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-1">Read More</a>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
         
                     <!-- Blog 5 -->
                     <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.9s">
@@ -975,6 +1321,8 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         
     </body>
 
