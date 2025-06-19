@@ -552,6 +552,38 @@
     z-index: 3;
 }
 
+/*** Update Read more button ***/
+
+.service-content .btn {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #198754;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .service-content .btn:hover {
+    background-color: #eb0c0c6d;
+  }
+
+
+
+  #google_translate_element select {
+    border: none;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    margin-left: 8px;
+    padding: 2px;
+  }
+  
+
+  /*** End ***/
+
 .service .service-item:hover .service-content::before {
     background: #198754;
     height: 100%;
@@ -1345,6 +1377,19 @@
 }
 
 
+.email-box {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .email-box {
+      width: 120%;
+      transform: translateX(-10%);
+    }
+  }
+  
+  
 .contact-icon {
     width: 90px;
     height: 90px;
@@ -1486,6 +1531,8 @@
     color: var(--bs-body);
     transition: 0.5s;
 }
+
+
 
 .footer .footer-item p {
     line-height: 35px;

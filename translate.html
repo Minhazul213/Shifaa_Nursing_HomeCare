@@ -1,0 +1,100 @@
+
+<!-- <style>
+            /* Hide Google Translate toolbar iframe */
+            iframe.goog-te-banner-frame {
+              display: none !important;
+              visibility: hidden !important;
+              opacity: 0 !important;
+              height: 0 !important;
+              width: 0 !important;
+              overflow: hidden !important;
+              position: fixed !important;
+              top: 0 !important;
+              left: 0 !important;
+              z-index: 9999 !important;
+              pointer-events: none !important;
+            }
+            body {
+              top: 0 !important;
+              margin-top: 0 !important;
+            }
+        
+            /* Style the Google Translate dropdown select */
+            #google_translate_element select {
+              background-color: transparent !important;
+              border: none !important;
+              color: white !important;
+              font-weight: 600;
+              padding: 0 5px;
+              height: auto;
+              cursor: pointer;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              appearance: none;
+            }
+            #google_translate_element select:focus {
+              outline: none;
+            }
+        
+            /* Container for button and dropdown */
+            .translate-container {
+              display: inline-flex;
+              align-items: center;
+              background-color: #0d6efd; /* Bootstrap primary blue */
+              color: white;
+              border-radius: 50px;
+              padding: 8px 16px;
+              cursor: pointer;
+              user-select: none;
+              font-weight: 600;
+              font-family: Arial, sans-serif;
+            }
+        
+            .translate-container span {
+              margin-left: 10px;
+            }
+          </style>  -->
+
+
+           <!-- Custom Button with Dropdown Inside -->
+                   <!-- <div class="translate-container">
+                        Are you Ready Now?
+                        <span id="google_translate_element"></span>
+                      </div>
+                      
+                      <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                          new google.translate.TranslateElement({
+                            pageLanguage: 'en',
+                            includedLanguages: 'en,bn',
+                            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                          }, 'google_translate_element');
+                        }
+                      </script>
+                      
+                      <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                      
+                      <script>
+                        window.addEventListener('load', function() {
+                          // Wait a bit then hide the toolbar container div
+                          setTimeout(() => {
+                            // Toolbar div created by Google Translate script
+                            const gtFrame = document.querySelector('body > iframe.goog-te-banner-frame');
+                            const skipTranslateDiv = document.querySelector('body > .skiptranslate');
+                      
+                            if (gtFrame) gtFrame.style.display = 'none';
+                            if (skipTranslateDiv) skipTranslateDiv.style.display = 'none';
+                      
+                            // Also hide any div with id goog-gt-tt (tooltip)
+                            const tooltip = document.getElementById('goog-gt-tt');
+                            if (tooltip) tooltip.style.display = 'none';
+                      
+                            // Ensure body margin reset
+                            document.body.style.top = '0px';
+                            document.body.style.marginTop = '0px';
+                      
+                            console.log('Google Translate toolbar and tooltip hidden');
+                          }, 2000); // 2 seconds delay to make sure toolbar is loaded
+                        });
+                      </script>-->
+  
